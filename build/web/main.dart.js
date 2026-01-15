@@ -59525,7 +59525,7 @@ return B.c.aL(r,s)},
 $S:392}
 A.Bb.prototype={
 T(a){var s=null
-return new A.rK(B.vT,"CV de Alex Arias Fern\xe1ndez",A.a7H(s,s,new A.mO(A.aiZ(s,s,B.xl,s,s,s,s,s,s,B.i,s,s,s,s,new A.cQ(A.pJ(8),B.r),s,s,s,B.uY,s)),"Arial",B.o,B.bh,s),!1,s)}}
+return new A.rK(B.vT,"CV-Arias_Fern\xe1ndez_Alex",A.a7H(s,s,new A.mO(A.aiZ(s,s,B.xl,s,s,s,s,s,s,B.i,s,s,s,s,new A.cQ(A.pJ(8),B.r),s,s,s,B.uY,s)),"Arial",B.o,B.bh,s),!1,s)}}
 A.pS.prototype={
 al(){return new A.EJ()}}
 A.EJ.prototype={
@@ -59544,7 +59544,7 @@ r=A.pJ(10)
 q=A.a9n(A.bk(102,B.o.K()>>>16&255,B.o.K()>>>8&255,B.o.K()&255),3)
 p=A.d([new A.eO(0,B.dl,A.bk(15,B.k.K()>>>16&255,B.k.K()>>>8&255,B.k.K()&255),B.po,8)],t.xq)
 o=t.E
-return A.Wv(A.d([A.aak(A.fk(A.eR(A.d([A.fk(A.a9E(A.aaB("",new A.a0i(),B.iz)),n,new A.dV(n,n,q,n,p,n,B.dm),110,n,n,110),B.uL,B.KG,B.db,new A.pg(n)],o),B.Z,B.a7),n,new A.dV(n,n,n,r,n,new A.l0(B.eU,B.dg,B.c6,s,n,n),B.aY),n,B.yz,B.dQ,n)),B.Gx],o),B.Z,B.a7,0)}}
+return A.Wv(A.d([A.aak(A.fk(A.eR(A.d([A.fk(A.a9E(A.aaB("",new A.a0i(),B.iz)),n,new A.dV(n,n,q,n,p,n,B.dm),110,n,n,110),B.uL,B.KF,B.db,new A.pg(n)],o),B.Z,B.a7),n,new A.dV(n,n,n,r,n,new A.l0(B.eU,B.dg,B.c6,s,n,n),B.aY),n,B.yz,B.dQ,n)),B.Gx],o),B.Z,B.a7,0)}}
 A.a0h.prototype={
 $2(a3,a4){var s,r,q,p,o,n,m=null,l="Experiencia Laboral",k="Operador de producci\xf3n, MANPOWER (Octubre 2022 - Agosto 2023): Manejo de maquinaria y control de calidad.",j="Educaci\xf3n",i="Grado Medio en Sistemas Microinform\xe1ticos y Redes (I.E.S Cosme L\xf3pez Rosriguez, 2019-2021)",h="Grado Superior Desarrollo de Aplicaciones Multiplataforma (Actualmente Cursando)",g="Habilidades",f="Procedimientos de Seguridad",e="Perseverancia",d="Trabajo en equipo",c="Entusiasmo",b="Comunicacion efica",a="Supervision",a0="Facilidad de aprendizaje",a1="Iniciativa",a2="Colaboracion"
 $.xM=a4.b>=700
@@ -62308,10 +62308,10 @@ B.AG=s([B.x0,B.x1,B.x2,B.cp],A.a7("w<kj>"))
 B.c5=new A.dP(1,"fuchsia")
 B.AI=s([B.as,B.c5,B.ag,B.by,B.bz,B.bA],A.a7("w<dP>"))
 B.K_=new A.l(!0,B.o,null,null,null,null,18,B.ay,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.KF=new A.lN("Alex Arias Fern\xe1ndez",null,B.K_,null,null)
+B.KG=new A.lN("Alex Arias Fern\xe1ndez",null,B.K_,null,null)
 B.GC=new A.dw(null,6,null,null)
 B.ML=new A.pg(null)
-B.AJ=s([B.KF,B.GC,B.ML],t.E)
+B.AJ=s([B.KG,B.GC,B.ML],t.E)
 B.ve=new A.oq(0,"topLeft")
 B.vh=new A.oq(3,"bottomRight")
 B.LQ=new A.iq(B.ve,B.vh)
@@ -63828,7 +63828,7 @@ B.JU=new A.l(!0,B.k,null,".AppleSystemUIFont",null,null,null,null,null,null,null
 B.Hy=new A.l(!0,B.k,null,".AppleSystemUIFont",null,null,null,null,null,null,null,null,null,null,null,null,null,B.e,null,null,null,"blackRedwoodCity labelSmall",null,null,null,null)
 B.KE=new A.dj(B.IU,B.I6,B.IV,B.Jk,B.HO,B.HV,B.Im,B.Jc,B.Ix,B.JJ,B.Hp,B.HF,B.JF,B.JU,B.Hy)
 B.IS=new A.l(!0,B.o,null,null,null,null,17,B.ay,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.KG=new A.lN("Alex Arias",null,B.IS,B.bB,null)
+B.KF=new A.lN("Alex Arias Fern\xe1ndez",null,B.IS,B.bB,null)
 B.KH=new A.lN("Informacion Personal",null,null,null,null)
 B.N5=new A.ZD(0,"system")
 B.KI=new A.uH(null)

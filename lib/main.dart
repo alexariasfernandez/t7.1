@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'CV de Alex Arias Fernández',
+      title: 'CV-Arias_Fernández_Alex',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         fontFamily: 'Arial',
@@ -187,7 +187,7 @@ class _CVState extends State<CV> {
 
                 const SizedBox(height: 12),
                 const Text(
-                  'Alex Arias',
+                  'Alex Arias Fernández',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 17,
