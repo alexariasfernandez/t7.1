@@ -123,7 +123,7 @@ class _CVState extends State<CV> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: const [
                 Text(
-                  'Iago Pérez',
+                  'Alex Arias Fernández',
                   style: TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
@@ -187,7 +187,7 @@ class _CVState extends State<CV> {
 
                 const SizedBox(height: 12),
                 const Text(
-                  'Alex Arias Fernández',
+                  'Alex Arias',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 17,
