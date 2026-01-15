@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 void main() {
   runApp(const MyApp());
 }
@@ -124,7 +123,7 @@ class _CVState extends State<CV> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: const [
                 Text(
-                  'Alex Arias Fernández',
+                  'Iago Pérez',
                   style: TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
