@@ -418,8 +418,10 @@ Widget infoMovil() {
 }
 
 // BOTÓN DE CONTACTO
+
 class btnInformacion extends StatefulWidget {
   const btnInformacion({super.key});
+
   @override
   State<btnInformacion> createState() => _estadoBotonContacto();
 }
@@ -429,186 +431,89 @@ class _estadoBotonContacto extends State<btnInformacion> {
 
   @override
   Widget build(BuildContext context) {
-    if (isWide) {
-      return Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        
-        children: [
-          ElevatedButton.icon(
-            onPressed: () => setState(() => _showContact = !_showContact),
-            icon: const Icon(Icons.person_outline, size: 13),
-            label: const Text('Informacion Personal'),
-          ),
-          const SizedBox(height: 29),
-          AnimatedCrossFade(
-            alignment: AlignmentGeometry.center,
-            duration: const Duration(milliseconds: 300),
-            // Primer hijo obligatorio
-            firstChild: Container(),
-            secondChild: Container( 
-              child: Column(
-               crossAxisAlignment: CrossAxisAlignment.center,
-                children: const [
-                  Row(
-                    children: [
-                      Icon(
-                        Icons.email,
-                        size: 12,
-                        color: Color.fromARGB(255, 48, 27, 0),
-                      ),
-                      SizedBox(width: 5),
-                      Text(
-                        'alex2000arias@gmail.com',
-                        style: TextStyle(fontSize: 12),
-                      ),
-                    ],
-                  ),
-                  SizedBox(height: 5),
-                  Row(
-                    children: [
-                      Icon(
-                        Icons.location_on,
-                        size: 12,
-                        color: Color.fromARGB(255, 48, 27, 0),
-                      ),
-                      SizedBox(width: 5),
-                      Text('A Coruña, España', style: TextStyle(fontSize: 12)),
-                    ],
-                  ),
-                  SizedBox(height: 5),
-                  Row(
-                    children: [
-                      Icon(
-                        Icons.phone,
-                        size: 12,
-                        color: Color.fromARGB(255, 48, 27, 0),
-                      ),
-                      SizedBox(width: 5),
-                      Text('672900132', style: TextStyle(fontSize: 12)),
-                    ],
-                  ),
-                  SizedBox(height: 5),
-                  Row(
-                    children: [
-                      Icon(
-                        Icons.date_range,
-                        size: 12,
-                        color: Color.fromARGB(255, 48, 27, 0),
-                      ),
-                      SizedBox(width: 5),
-                      Text(
-                        '27 de Marzo de 2000',
-                        style: TextStyle(fontSize: 12),
-                      ),
-                    ],
-                  ),
-                  SizedBox(height: 5),
-                  Row(
-                    children: [
-                      Icon(
-                        Icons.flag,
-                        size: 12,
-                        color: Color.fromARGB(255, 48, 27, 0),
-                      ),
-                      SizedBox(width: 5),
-                      Text('Española', style: TextStyle(fontSize: 12)),
-                    ],
-                  ),
-                ],
-              ),
-            ),
+    return Column(
+      crossAxisAlignment:
+          isWide ? CrossAxisAlignment.center : CrossAxisAlignment.start,
+      children: [
+        ElevatedButton.icon(
+          onPressed: () => setState(() => _showContact = !_showContact),
+          icon: const Icon(Icons.person_outline, size: 13),
+          label: const Text('Informacion Personal'),
+        ),
+        const SizedBox(height: 12),
 
-            crossFadeState: _showContact
-                ? CrossFadeState.showSecond
-                : CrossFadeState.showFirst,
-          ),
-        ],
-      );
-    } else {
-      return Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          ElevatedButton.icon(
-            onPressed: () => setState(() => _showContact = !_showContact),
-            icon: const Icon(Icons.person_outline, size: 13),
-            label: const Text('Informacion Personal'),
-          ),
-          const SizedBox(height: 8),
-          AnimatedCrossFade(
-            duration: const Duration(milliseconds: 300),
-            firstChild: Container(),
-            secondChild: Column(
+        AnimatedCrossFade(
+          duration: const Duration(milliseconds: 300),
+          alignment: Alignment.center,
+
+          firstChild: const SizedBox.shrink(),
+
+          secondChild: Center(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: const [
-                Row(
-                  children: [
-                    Icon(
-                      Icons.email,
-                      size: 12,
-                      color: Color.fromARGB(255, 48, 27, 0),
-                    ),
-                    SizedBox(width: 5),
-                    Text(
-                      'alex2000arias@gmail.com',
-                      style: TextStyle(fontSize: 12),
-                    ),
-                  ],
+                _FilaInfo(
+                  icon: Icons.email,
+                  text: 'alex2000arias@gmail.com',
                 ),
                 SizedBox(height: 5),
-                Row(
-                  children: [
-                    Icon(
-                      Icons.location_on,
-                      size: 12,
-                      color: Color.fromARGB(255, 48, 27, 0),
-                    ),
-                    SizedBox(width: 5),
-                    Text('A Coruña, España', style: TextStyle(fontSize: 12)),
-                  ],
+                _FilaInfo(
+                  icon: Icons.location_on,
+                  text: 'A Coruña, España',
                 ),
                 SizedBox(height: 5),
-                Row(
-                  children: [
-                    Icon(
-                      Icons.phone,
-                      size: 12,
-                      color: Color.fromARGB(255, 48, 27, 0),
-                    ),
-                    SizedBox(width: 5),
-                    Text('672900132', style: TextStyle(fontSize: 12)),
-                  ],
+                _FilaInfo(
+                  icon: Icons.phone,
+                  text: '672900132',
                 ),
                 SizedBox(height: 5),
-                Row(
-                  children: [
-                    Icon(
-                      Icons.date_range,
-                      size: 12,
-                      color: Color.fromARGB(255, 48, 27, 0),
-                    ),
-                    SizedBox(width: 5),
-                    Text('27 de Marzo de 2000', style: TextStyle(fontSize: 12)),
-                  ],
+                _FilaInfo(
+                  icon: Icons.date_range,
+                  text: '27 de Marzo de 2000',
                 ),
                 SizedBox(height: 5),
-                Row(
-                  children: [
-                    Icon(
-                      Icons.flag,
-                      size: 12,
-                      color: Color.fromARGB(255, 48, 27, 0),
-                    ),
-                    SizedBox(width: 5),
-                    Text('Española', style: TextStyle(fontSize: 12)),
-                  ],
+                _FilaInfo(
+                  icon: Icons.flag,
+                  text: 'Española',
                 ),
               ],
             ),
-            crossFadeState: _showContact
-                ? CrossFadeState.showSecond
-                : CrossFadeState.showFirst,
           ),
-        ],
-      );
-    }
+
+          crossFadeState: _showContact
+              ? CrossFadeState.showSecond
+              : CrossFadeState.showFirst,
+        ),
+      ],
+    );
+  }
+}
+class _FilaInfo extends StatelessWidget {
+  final IconData icon;
+  final String text;
+
+  const _FilaInfo({
+    required this.icon,
+    required this.text,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Icon(
+          icon,
+          size: 12,
+          color: Color.fromARGB(255, 48, 27, 0),
+        ),
+        const SizedBox(width: 6),
+        Text(
+          text,
+          style: const TextStyle(fontSize: 12),
+        ),
+      ],
+    );
   }
 }
